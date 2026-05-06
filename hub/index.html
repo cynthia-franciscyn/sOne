@@ -15,7 +15,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Top Secret Detailing Studio | Premium Car Detailing in Bangalore">
 <meta property="og:description" content="Premium car detailing, ceramic coating, PPF and paint correction in Bangalore. 5-star rated, 200+ vehicles detailed. Call +91 96320 45724.">
-<meta property="og:image" content="https://www.topsecretdetailingblr.in/images/topSecretTeamBanglore.jpg">
+<meta property="og:image" content="https://www.topsecretdetailingblr.in/images/topSecretTeamBanglore.jpeg">
 <meta property="og:url" content="https://www.topsecretdetailingblr.in">
 <meta property="og:site_name" content="Top Secret Detailing Studio">
 
@@ -678,7 +678,7 @@ footer{
 
   /* certs */
   .cert-body{grid-template-columns:1fr;}
-  .cert-featured{border-right:none;border-bottom:1px solid var(--line);aspect-ratio:4/3;}
+  .cert-featured{border-right:none;border-bottom:1px solid var(--line);aspect-ratio:unset;min-height:360px;}
   .cert-grid-right{grid-template-columns:1fr 1fr 1fr;}
   .cert-tile{aspect-ratio:1/1;}
   .cert-tile:nth-child(even){border-right:1px solid var(--line);}
@@ -762,7 +762,7 @@ footer{
   /* certs */
   .cert-main-title{font-size:1.8rem;padding:10px 4% 24px;}
   .cert-eyebrow{padding:28px 4% 0;}
-  .cert-featured{aspect-ratio:3/4;}
+  .cert-featured{aspect-ratio:unset;min-height:340px;}
   .cert-grid-right{grid-template-columns:1fr 1fr;}
   .cert-tile:nth-child(3n){border-right:1px solid var(--line);}
   .cert-tile:nth-child(even){border-right:none;}
@@ -869,13 +869,15 @@ footer{
 /* RESPONSIVE */
 @media(max-width:900px){
   .cert-body{grid-template-columns:1fr;}
-  .cert-featured{border-right:none;border-bottom:1px solid var(--line);aspect-ratio:4/3;}
+  .cert-featured{border-right:none;border-bottom:1px solid var(--line);aspect-ratio:unset;min-height:360px;}
   .cert-list-panel{padding:28px 24px;}
 }
 @media(max-width:640px){
   .cert-list-panel{padding:22px 16px;}
   .cert-list-num{font-size:1.4rem;}
   .cert-list-name{font-size:0.83rem;}
+  .cert-featured{aspect-ratio:unset;min-height:340px;background:var(--black);}
+  .cert-slide img{object-fit:contain;object-position:center center;}
 }
 
 </style>
@@ -885,7 +887,7 @@ footer{
   "@context": "https://schema.org",
   "@type": "AutoRepair",
   "name": "Top Secret Detailing Studio",
-  "image": "https://www.topsecretdetailingblr.in/images/topSecretTeamBanglore.jpg",
+  "image": "https://www.topsecretdetailingblr.in/images/topSecretTeamBanglore.jpeg",
   "url": "https://www.topsecretdetailingblr.in",
   "telephone": "+919632045724",
   "email": "topsecretblr@gmail.com",
@@ -1023,7 +1025,7 @@ footer{
   <h2 class="reveal">Who Are We</h2>
   <div class="about-content">
   <p>Top Secret Detailing Studio is Bangalore's premium car detailing studio, founded in 2024 with a mission to redefine automotive care. Located in Magadi Main Road, Bangalore, we specialise in ceramic coating, Paint Protection Film (PPF), paint correction, window tinting, and full interior and exterior detailing. We believe every vehicle deserves expert attention — our goal is to deliver unmatched detailing services that enhance your car's appearance and preserve its value for years to come. We use only the finest products from brands like Rupes, CarPro, Artdeshine, and Avery Dennison. At Top Secret Detailing Studio, your car is more than just a vehicle — it's a work of art, and we treat it as such.</p>    
-  <img src="images/topSecretTeamBanglore.jpg" alt="Top Secret Detailing Studio team applying ceramic coating in Bangalore">  
+  <img src="images/topSecretTeamBanglore.jpeg" alt="Top Secret Detailing Studio team applying ceramic coating in Bangalore">  
   </div>
 </div>
 
@@ -1133,16 +1135,19 @@ footer{
 
     <!-- LEFT: Slideshow -->
     <div class="cert-featured" id="certSlideshow">
-      <div class="cert-slide active"><img src="images/certifications/ss13.jpg" alt="Certified Detailing Professional"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">01 / 13</span><div class="cert-slide-caption">Certified Detailing Professional</div></div></div>
-      <div class="cert-slide"><img src="images/certifications/ss4.jpg" alt="Precision at Work"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">02 / 13</span><div class="cert-slide-caption">Precision at Work</div></div></div>
-      <div class="cert-slide"><img src="images/certifications/ss2.jpg" alt="Training and Excellence"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">03 / 13</span><div class="cert-slide-caption">Training &amp; Excellence</div></div></div>
-      <div class="cert-slide"><img src="images/certifications/ss1.jpg" alt="Craft and Dedication"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">04 / 13</span><div class="cert-slide-caption">Craft &amp; Dedication</div></div></div>
-      <div class="cert-slide"><img src="images/certifications/ss5.jpg" alt="Certified Achievement"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">05 / 13</span><div class="cert-slide-caption">Certified Achievement</div></div></div>
-      <div class="cert-slide"><img src="images/certifications/ss6.jpg" alt="Industry Recognition"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">06 / 13</span><div class="cert-slide-caption">Industry Recognition</div></div></div>
-      <div class="cert-slide"><img src="images/certifications/ss7.jpg" alt="Expert Detailing"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">07 / 13</span><div class="cert-slide-caption">Expert Detailing</div></div></div>
-      <div class="cert-slide"><img src="images/certifications/ss8.jpg" alt="The Art of Detailing"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">08 / 13</span><div class="cert-slide-caption">The Art of Detailing</div></div></div>
-      <div class="cert-slide"><img src="images/certifications/ss9.jpg" alt="Passion for Perfection"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">09 / 13</span><div class="cert-slide-caption">Passion for Perfection</div></div></div>
-      <div class="cert-slide"><img src="images/certifications/ss11.jpg" alt="Premium Craftsmanship"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">10 / 13</span><div class="cert-slide-caption">Premium Craftsmanship</div></div></div>
+      <div class="cert-slide active"><img src="images/s1.jpeg" alt="Certified Detailing Professional"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">01 / 10</span><div class="cert-slide-caption">Certified Detailing Professional</div></div></div>
+      <div class="cert-slide"><img src="images/s2.jpeg" alt="Precision at Work"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">02 / 10</span><div class="cert-slide-caption">Precision at Work</div></div></div>
+      <div class="cert-slide"><img src="images/s3.jpeg" alt="Training and Excellence"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">03 / 10</span><div class="cert-slide-caption">Training &amp; Excellence</div></div></div>
+      <div class="cert-slide"><img src="images/s4.jpeg" alt="Craft and Dedication"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">04 / 10</span><div class="cert-slide-caption">Craft &amp; Dedication</div></div></div>
+      <div class="cert-slide"><img src="images/s5.jpeg" alt="Certified Achievement"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">05 / 10</span><div class="cert-slide-caption">Certified Achievement</div></div></div>
+      <div class="cert-slide"><img src="images/s6.jpeg" alt="Industry Recognition"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">06 / 10</span><div class="cert-slide-caption">Industry Recognition</div></div></div>
+      <div class="cert-slide"><img src="images/s7.jpeg" alt="Expert Detailing"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">07 / 10</span><div class="cert-slide-caption">Expert Detailing</div></div></div>
+      <div class="cert-slide"><img src="images/s8.jpeg" alt="The Art of Detailing"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">08 / 10</span><div class="cert-slide-caption">The Art of Detailing</div></div></div>
+      <div class="cert-slide"><img src="images/s9.jpeg" alt="Passion for Perfection"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">09 / 10</span><div class="cert-slide-caption">Passion for Perfection</div></div></div>
+      <div class="cert-slide"><img src="images/s10.jpeg" alt="Hands-On Expertise"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">10 / 10</span><div class="cert-slide-caption">Hands-On Expertise</div></div></div>
+      <div class="cert-slide"><img src="images/s11.jpeg" alt="Premium Craftsmanship"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">11 / 10</span><div class="cert-slide-caption">Premium Craftsmanship</div></div></div>
+      <div class="cert-slide"><img src="images/s12.jpeg" alt="Studio Excellence"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">12 / 10</span><div class="cert-slide-caption">Studio Excellence</div></div></div>
+      <div class="cert-slide"><img src="images/s13.jpeg" alt="Detail-Obsessed"><div class="cert-slide-overlay"></div><div class="cert-slide-meta"><span class="cert-slide-num">13 / 10</span><div class="cert-slide-caption">Detail-Obsessed</div></div></div>
 
       <div class="cert-dots" id="certDots"></div>
       <div class="cert-slide-nav">
