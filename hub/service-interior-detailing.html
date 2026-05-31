@@ -187,7 +187,7 @@ img{display:block;max-width:100%}
   position:relative;z-index:2;
   display:flex;gap:0;margin-top:52px;
   border-top:1px solid rgba(255,255,255,0.07);
-  padding-top:32px;max-width:520px;
+  padding-top:70px;max-width:520px;
 }
 .hero-stat{flex:1;padding-right:24px;}
 .hero-stat+.hero-stat{border-left:1px solid rgba(255,255,255,0.07);padding-left:24px;}
@@ -417,7 +417,7 @@ footer{
   .mob-nav{display:flex;}
 }
 @media(max-width:640px){
-  .hero{min-height:100svh;padding:0 4% 52px;}
+  .hero{min-height:100svh;padding:0 4% 70px;}
   .hero h1{font-size:clamp(3rem,13vw,5rem);}
   .hero-stats{flex-wrap:wrap;gap:20px;}
   .hero-stat+.hero-stat{border-left:none;padding-left:0;}
@@ -428,6 +428,18 @@ footer{
   .step-num{font-size:2.5rem;}
   footer{flex-direction:column;text-align:center;padding:18px 4%;}
   .wa{width:48px;height:48px;bottom:16px;right:16px;}
+}
+
+@media(max-width:640px){
+  .hero{min-height:100svh;padding:80px 4% 56px;}
+}
+
+@media(max-width:640px){
+  .hero{
+    min-height:100svh;
+    padding:72px 4% 56px;   /* 72px ≈ nav height + breathing room */
+  }
+  .hero-stats{padding-top:40px;} /* reduce from 70px to save vertical space */
 }
 </style>
 </head>
@@ -582,7 +594,7 @@ footer{
 <!-- FOOTER -->
 <footer>
   <div class="footer-brand">Top<em>Secret</em> Detailing Studio</div>
-  <div class="footer-copy">&copy; 2025 Top Secret Detailing Studio · 197, Balaji Layout, Magadi Main Road, Bangalore 560091 · +91 96320 45724</div>
+  <div class="footer-copy">&copy; <span id="currentYear"></span> Top Secret Detailing Studio · 197, Balaji Layout, Magadi Main Road, Bangalore 560091 · +91 96320 45724</div>
 </footer>
 
 <!-- WHATSAPP -->
@@ -591,6 +603,9 @@ footer{
 </a>
 
 <script>
+// Set current year dynamically
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+
 // NAV
 const hamburger=document.getElementById('hamburger');
 const mobileNav=document.getElementById('mobileNav');
