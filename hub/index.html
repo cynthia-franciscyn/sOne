@@ -1492,7 +1492,7 @@ footer{
 <!-- FOOTER — updated year to 2025 -->
 <footer>
   <div class="footer-brand">Top<span>Secret</span> Detailing Studio</div>
-  <div class="footer-copy">&copy; 2024 Top Secret Detailing Studio — 197, Balaji Layout, Magadi Main Road, Bangalore 560091 | +91 96320 45724</div>
+  <div class="footer-copy">&copy; <span id="currentYear"></span> Top Secret Detailing Studio — 197, Balaji Layout, Magadi Main Road, Bangalore 560091 | +91 96320 45724</div>
 </footer>
 
 <!-- WHATSAPP -->
@@ -1666,6 +1666,9 @@ cToggle.addEventListener('click',()=>{
   else{cInput.disabled=true;cSend.disabled=true;}
 });
 cClose.addEventListener('click',()=>{chatOpen=false;cWin.classList.remove('open');cInput.disabled=true;cSend.disabled=true;});
+
+// Set current year dynamically
+document.getElementById('currentYear').textContent = new Date().getFullYear();
 
 function addMsg(text,who,clickable=false){
   const d=document.createElement('div');d.className=`message ${who}-message`;
