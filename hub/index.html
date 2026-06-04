@@ -96,7 +96,7 @@ p{margin:0;padding:0}
   filter: brightness(0.7) contrast(1.1) saturate(1.1);
 }
 .hero-overlay{position:absolute;bottom:10%;left:5%;z-index:10;pointer-events:none;}
-.hero-line{display:block;font-family:var(--ft);font-size:clamp(2.8rem,7vw,6rem);letter-spacing:0.18em;color:var(--white);overflow:hidden;line-height:1.1;}
+.hero-line{display:block;font-family:var(--ft);font-size:clamp(2rem,7vw,6rem);letter-spacing:0.05em;color:var(--white);overflow:hidden;line-height:1.1;}
 .hero-line span{
   display:block;transform:translateY(110%);opacity:0;
   animation:heroReveal 0.8s cubic-bezier(0.16,1,0.3,1) forwards;
@@ -696,20 +696,17 @@ footer{
     transform:translate(-50%, -50%);
     z-index:10;
     pointer-events:none;
-    padding:0 6%;
+    padding:0 8%;
     width:100%;
     text-align:center;
-    overflow:visible;   /* ← add this */
   }
-   .hero-line{
-  font-size:clamp(3.2rem,13vw,6rem);
-  letter-spacing:0.05em;
-  line-height:1.05;
-  text-align:center;
-  width:100%;
-}
-
-}
+  .hero-line{
+    font-size:clamp(2rem,15.5vw,6rem);
+    letter-spacing:0.01em;
+    line-height:1.05;
+    text-align:center;
+    width:100%;
+  }
   .hero-divider{
     margin:10px auto;
   }
@@ -797,6 +794,7 @@ footer{
 
   /* footer */
   footer{flex-direction:column;text-align:center;padding:18px 4%;}
+}
 
 @media(max-width:640px) and (orientation: portrait){
   .swipe-container{display:block !important;position:relative;width:100%;max-width:100%;height:300px;order:1;margin-bottom:16px;visibility:visible;opacity:1;flex:none !important;border:2px solid var(--red);background:var(--card);border-radius:4px;overflow:hidden;cursor:ew-resize;user-select:none;touch-action:none;}
@@ -809,7 +807,7 @@ footer{
 
 @media(max-width:380px){
   .hero-overlay{padding:0 5%;}
-  .hero-line{font-size:clamp(2.6rem,12.5vw,4rem);letter-spacing:0.03em;line-height:1.0;}
+  .hero-line{font-size:clamp(2.5rem,15vw,4.7rem);letter-spacing:0.03em;line-height:1.0;}
   .why-index{font-size:2rem;min-width:40px;}
   .why-headline{font-size:1.55rem;}
   .why-stat{font-size:2.1rem;}
@@ -1026,7 +1024,7 @@ footer{
 <div id="about" class="about">
   <h2 class="reveal">Who Are We</h2>
   <div class="about-content">
-  <p>Top Secret Detailing Studio is Bangalore's premium car detailing studio, founded in 2024 with a mission to redefine automotive care. Located in Magadi Main Road, Bangalore, we specialise in ceramic coating, Paint Protection Film (PPF), paint correction, window tinting, and full interior and exterior detailing. We believe every vehicle deserves expert attention — our goal is to deliver unmatched detailing services that enhance your car's appearance and preserve its value for years to come. We use only the finest products from brands like Evo Films, Rupes, CarPro, Artdeshine, and Avery Dennison. At Top Secret Detailing Studio, your car is more than just a vehicle — it's a work of art, and we treat it as such.</p>    
+  <p>Top Secret Detailing Studio is Bangalore's premium car detailing studio, founded in 2024 with a mission to redefine automotive care. Located in Magadi Main Road, Bangalore, we specialise in ceramic coating, Paint Protection Film (PPF), paint correction, window tinting, and full interior and exterior detailing. We believe every vehicle deserves expert attention — our goal is to deliver unmatched detailing services that enhance your car's appearance and preserve its value for years to come. We use only the finest products from brands like Rupes, CarPro, Artdeshine, and Avery Dennison. At Top Secret Detailing Studio, your car is more than just a vehicle — it's a work of art, and we treat it as such.</p>    
   <img src="images/topSecretTeamBanglore.jpeg" alt="Top Secret Detailing Studio team applying ceramic coating in Bangalore">  
   </div>
 </div>
